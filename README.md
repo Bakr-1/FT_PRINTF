@@ -39,12 +39,12 @@ needs the gcc compiler and some standard C libraries to run.
 
 
 	`$make`
-	
+
 2. Using it in your code
 
 	To use the library functions in your code, simply include its header:
 
-	
+
 	`#include "ft_printf.h"`
 
 	and compile the libftprintf.a library with your files.
