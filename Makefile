@@ -3,24 +3,24 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aalseri <aalseri@student.42.fr>            +#+  +:+       +#+         #
+#    By: aalseri <aalseri@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/24 21:10:12 by aalseri           #+#    #+#              #
-#    Updated: 2022/03/11 10:58:52 by aalseri          ###   ########.fr        #
+#    Updated: 2022/09/12 18:05:08 by aalseri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c ft_crazy.c ft_putnbr_base.c ft_putnbr.c ft_putnbr_un.c ft_putpointer.c ft_putstr.c ft_puthexa.c ft_puthexa.c ft_putchar.c
+SRCS = srcs/ft_printf.c srcs/ft_putnbr.c srcs/ft_puthexa.c
 
-OBJS = ${SRCS:.c=.o}
-
-INCLUDES = ft_printf.h
+CFLAGS = -Wall -Wextra -Werror
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+INCLUDES = -I includes
+
+OBJS = ${SRCS:.c=.o}
 
 all: ${NAME}
 
