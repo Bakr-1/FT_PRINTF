@@ -35,7 +35,7 @@ needs the gcc compiler and some standard C libraries to run.
 
 1. Compiling the library
 
-	To compile, go to the library path and run:
+	To compile, clone the repository and run the following inside the folder:
 
 
 	`$make`
@@ -47,4 +47,4 @@ needs the gcc compiler and some standard C libraries to run.
 	
 	`#include "ft_printf.h"`
 
-
+	and compile the libftprintf.a library with your files.
